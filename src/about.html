@@ -8,15 +8,23 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;0,700;1,200;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/grid.css" />
   </head>
   <body>
     <header>
       <nav>
         <div class="navbar">
           <div>
-            <a href="#"><img src="Images/rsz_logo.png" alt="Logo" /></a>
+            <a href="#"
+              ><img class="logo" src="Images/rsz_logo.png" alt="Logo"
+            /></a>
           </div>
-          <div>
+          <div class="hamburger-menu">
             <button><i class="fa-solid fa-bars"></i></button>
           </div>
           <div>
@@ -37,53 +45,118 @@
     <main>
       <div>
         <video src="Images/timelapse.mp4" controls loop>Hills</video>
-        <h2>Lorem, ipsum dolor</h2>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea dolorum
-          vero, molestias doloremque atque dicta dignissimos ipsa, reprehenderit
-          error inventore voluptate recusandae quidem, temporibus amet expedita
-          repudiandae? Repudiandae odio ut neque minima nulla perspiciatis
-          similique est! Molestiae deleniti sint debitis.
-        </p>
-        <a href="#" download="#"> Download Resume </a>
+        <div class="about">
+          <h2 class="headers">About Me</h2>
+          <p class="content">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea dolorum
+            vero, molestias doloremque atque dicta dignissimos ipsa,
+            reprehenderit error inventore voluptate recusandae quidem,
+            temporibus amet expedita repudiandae?
+          </p>
+          <p class="content">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea dolorum
+            vero, molestias doloremque atque dicta dignissimos ipsa,
+            reprehenderit error inventore voluptate recusandae quidem,
+            temporibus amet expedita repudiandae?
+          </p>
+          <a class="call-to-action-button download" href="#" download="#">
+            <i class="fa-solid fa-download"></i>
+            Download Resume
+          </a>
+        </div>
 
         <!--Education and Experience-->
         <section>
-          <h2>My Education and Work Experience</h2>
-          <div>
+          <h2 class="headers">My Education and Work Experience</h2>
+          <div class="edu">
             <h3>Education</h3>
             <div>
               <ul>
-                <li>Lorem ipsum dolor sit</li>
-                <li>Lorem ipsum dolor sit</li>
-                <li>Lorem ipsum dolor sit</li>
-                <li>Lorem ipsum dolor sit</li>
+                <li>
+                  <div class="class">
+                    <div class="school">Stanford University</div>
+                    <div class="year">2023</div>
+                  </div>
+                  <div class="course">Certificate in Machine Learning</div>
+                </li>
+                <li>
+                  <div class="class">
+                    <div class="school">Stanford University</div>
+                    <div class="year">2023</div>
+                  </div>
+                  <div class="course">Certificate in Machine Learning</div>
+                </li>
+                <li>
+                  <div class="class">
+                    <div class="school">Stanford University</div>
+                    <div class="year">2023</div>
+                  </div>
+                  <div class="course">Certificate in Machine Learning</div>
+                </li>
+                <li>
+                  <div class="class">
+                    <div class="school">Stanford University</div>
+                    <div class="year">2023</div>
+                  </div>
+                  <div class="course">Certificate in Machine Learning</div>
+                </li>
               </ul>
             </div>
           </div>
-          <div>
+
+          <!--Work Experience-->
+          <div class="edu">
             <h3>Work Experience</h3>
             <div>
               <ul>
-                <li>Lorem ipsum dolor sit</li>
-                <li>Lorem ipsum dolor sit</li>
-                <li>Lorem ipsum dolor sit</li>
-                <li>Lorem ipsum dolor sit</li>
+                <li>
+                  <div class="class">
+                    <div class="school">Stanford University</div>
+                    <div class="year">2023</div>
+                  </div>
+                  <div class="course">Certificate in Machine Learning</div>
+                </li>
+                <li>
+                  <div class="class">
+                    <div class="school">Stanford University</div>
+                    <div class="year">2023</div>
+                  </div>
+                  <div class="course">Certificate in Machine Learning</div>
+                </li>
+                <li>
+                  <div class="class">
+                    <div class="school">Stanford University</div>
+                    <div class="year">2023</div>
+                  </div>
+                  <div class="course">Certificate in Machine Learning</div>
+                </li>
+                <li>
+                  <div class="class">
+                    <div class="school">Stanford University</div>
+                    <div class="year">2023</div>
+                  </div>
+                  <div class="course">Certificate in Machine Learning</div>
+                </li>
               </ul>
             </div>
           </div>
         </section>
       </div>
     </main>
+
     <!-- Footer Area -->
     <footer>
       <div>
-        <a href="#">Logo</a>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates,
-          saepe?
-        </p>
-        <ul>
+        <div class="end-logo">
+          <a href="#"
+            ><img class="logo" src="Images/rsz_logo.png" alt="Logo"
+          /></a>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates,
+            saepe?
+          </p>
+        </div>
+        <ul class="socials">
           <li>
             <a href="#"><i class="fa-brands fa-linkedin"></i></a>
           </li>
@@ -100,14 +173,14 @@
       </div>
       <div>
         <h2>Useful Links</h2>
-        <ul>
-          <li><a href="#">Link 1</a></li>
-          <li><a href="#">Link 2</a></li>
-          <li><a href="#">Link 3</a></li>
-          <li><a href="#">Link 4</a></li>
+        <ul class="useful-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
       </div>
-      <div>
+      <div class="contact-info">
         <h2>Contact Info</h2>
         <address>
           <p>
@@ -120,9 +193,9 @@
           </ul>
         </address>
       </div>
-      <div>
-        <p>Copyright. Lorem, ipsum dolor.</p>
-        <p>Copyright. Lorem, ipsum dolor.</p>
+      <div class="copyright">
+        <p>Copyright 2023. All Rights Reserved</p>
+        <p>Powered by Simon</p>
       </div>
     </footer>
   </body>
