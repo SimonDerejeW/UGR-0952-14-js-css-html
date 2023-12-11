@@ -16,56 +16,52 @@
     <link rel="stylesheet" href="css/grid.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <div class="navbar">
-          <div>
-            <a href="#"
-              ><img class="logo" src="Images/rsz_logo.png" alt="Logo"
-            /></a>
-          </div>
-          <div class="hamburger-menu">
-             <i class="fa-solid fa-bars hamburger-icon"></i>
-            <div class="hamburger-content">
-              <ul>
-                <li class="nav-list"><a href="home.html">Home</a></li>
-                <li class="nav-list"><a href="about.html">About</a></li>
-                <li class="nav-list">
-                  <a href="portfolio.html">Portfolio</a>
-                </li>
-                <li class="nav-list"><a href="skills.html">Skills</a></li>
-                <li class="nav-list"><a href="contact.html">Contact Me</a></li>
-              </ul>
-            </div>
+    <header class="header">
+      <nav class="navbar">
+        <div class="navbar__logo">
+          <a href="#"
+            ><img class="logo" src="Images/rsz_logo.png" alt="Logo"
+          /></a>
+        </div>
+        <div class="navbar__hamburger-menu">
+          <i class="fa-solid fa-bars hamburger-icon"></i>
+          <div class="navbar__hamburger-content">
+            <ul class="navbar__ul">
+              <li class="navbar__li"><a href="home.html">Home</a></li>
+              <li class="navbar__li"><a href="about.html">About</a></li>
+              <li class="navbar__li"><a href="portfolio.html">Portfolio</a></li>
+              <li class="navbar__li"><a href="skills.html">Skills</a></li>
+              <li class="navbar__li"><a href="contact.html">Contact Me</a></li>
+            </ul>
           </div>
         </div>
       </nav>
     </header>
-    <main>
+    <main class="portfolio-details">
       <h2 class="headers">Lorem ipsum dolor sit amet</h2>
       <div class="detail-vid-image">
-        <figure class="details-img">
+        <figure class="portfolio-details__img">
           <img src="Images/cat_small.jpg" alt="Project detail photo" />
         </figure>
         <video controls loop src="Images/lighthouse.mp4">Lighthouse</video>
       </div>
       <div class="portfolio-info">
-          <div class="portfolio-info-desc">
-              <h4 class="title">Client</h4>
-              <p>SquareSparc Ltd.</p>
-            </div>
-            <div class="portfolio-info-desc">
-              <h4 class="title">Date</h4>
-              <time datetime="2023-12-01">November 12, 2023</time>
-            </div>
-            <div class="portfolio-info-desc">
-              <h4 class="title">Website</h4>
-              <p><a href="https://www.youtube.com">SquareSparc Ltd.</a></p>
-            </div>
-            <div class="portfolio-info-desc">
-              <h4 class="title">Role</h4>
-              <p>UI/UX Design & Web</p>
-            </div>
+        <div class="portfolio-info-desc">
+          <h4 class="title">Client</h4>
+          <p>SquareSparc Ltd.</p>
+        </div>
+        <div class="portfolio-info-desc">
+          <h4 class="title">Date</h4>
+          <time datetime="2023-12-01">November 12, 2023</time>
+        </div>
+        <div class="portfolio-info-desc">
+          <h4 class="title">Website</h4>
+          <p><a href="https://www.youtube.com">SquareSparc Ltd.</a></p>
+        </div>
+        <div class="portfolio-info-desc">
+          <h4 class="title">Role</h4>
+          <p>UI/UX Design & Web</p>
+        </div>
       </div>
 
       <div class="detail-desc">
@@ -76,15 +72,15 @@
             explicabo quos consequatur ullam delectus officiis vitae minus
             error, praesentium modi debitis. Dolore veniam voluptatum sunt
             quisquam sint ullam provident eum id ratione porro.
-             <p>
-              Doloribus modi
-              velit quam consequatur excepturi voluptatem blanditiis quidem saepe
-              iure, omnis maiores. Ad fugiat placeat minima consectetur aspernatur
-              delectus culpa repellat at possimus eum.
-            </p>
+          </p>
+          <p>
+            Doloribus modi velit quam consequatur excepturi voluptatem
+            blanditiis quidem saepe iure, omnis maiores. Ad fugiat placeat
+            minima consectetur aspernatur delectus culpa repellat at possimus
+            eum.
           </p>
         </div>
-        <img src="Images/cat_small.jpg" alt="">
+        <img src="Images/cat_small.jpg" alt="" />
       </div>
       <div class="detail-desc">
         <div>
@@ -94,22 +90,22 @@
             explicabo quos consequatur ullam delectus officiis vitae minus
             error, praesentium modi debitis. Dolore veniam voluptatum sunt
             quisquam sint ullam provident eum id ratione porro.
-            <p>
-              Doloribus modi
-              velit quam consequatur excepturi voluptatem blanditiis quidem saepe
-              iure, omnis maiores. Ad fugiat placeat minima consectetur aspernatur
-              delectus culpa repellat at possimus eum.
-            </p>
+          </p>
+          <p>
+            Doloribus modi velit quam consequatur excepturi voluptatem
+            blanditiis quidem saepe iure, omnis maiores. Ad fugiat placeat
+            minima consectetur aspernatur delectus culpa repellat at possimus
+            eum.
           </p>
         </div>
-        <img src="Images/cat_small.jpg" alt="">
+        <img src="Images/cat_small.jpg" alt="" />
       </div>
     </main>
 
     <!-- Footer Area -->
     <footer>
-      <div>
-        <div class="end-logo">
+      <div class="footer__logo-socials">
+        <div class="footer__end-logo">
           <a href="#"
             ><img class="logo" src="Images/rsz_logo.png" alt="Logo"
           /></a>
@@ -118,7 +114,7 @@
             saepe?
           </p>
         </div>
-        <ul class="socials">
+        <ul class="footer__socials">
           <li>
             <a href="#"><i class="fa-brands fa-linkedin"></i></a>
           </li>
@@ -133,31 +129,31 @@
           </li>
         </ul>
       </div>
-      <div>
+      <div class="footer__useful-links">
         <h2>Useful Links</h2>
-        <ul class="useful-links">
+        <ul class="footer__ul">
           <li><a href="#">Home</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Portfolio</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
       </div>
-      <div class="contact-info">
+      <div class="footer__contact-info">
         <h2>Contact Info</h2>
-        <address>
+        <address class="footer_address">
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi,
             sint?
           </p>
-          <ul>
+          <ul class="footer__contact-ul">
             <li>Tel: +251989971680</li>
             <li>Email: simon.dereje@aait.edu.et</li>
           </ul>
         </address>
       </div>
-      <div class="copyright">
+      <div class="footer__copyright">
         <p>Copyright 2023. All Rights Reserved</p>
-        <p>Powered by Simon</p>
+        <p class="footer__p--powered">Powered by Simon</p>
       </div>
     </footer>
   </body>

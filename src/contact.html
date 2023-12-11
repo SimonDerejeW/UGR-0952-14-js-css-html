@@ -16,27 +16,23 @@
     <link rel="stylesheet" href="css/grid.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <div class="navbar">
-          <div>
-            <a href="#"
-              ><img class="logo" src="Images/rsz_logo.png" alt="Logo"
-            /></a>
-          </div>
-          <div class="hamburger-menu">
-             <i class="fa-solid fa-bars hamburger-icon"></i>
-            <div class="hamburger-content">
-              <ul>
-                <li class="nav-list"><a href="home.html">Home</a></li>
-                <li class="nav-list"><a href="about.html">About</a></li>
-                <li class="nav-list">
-                  <a href="portfolio.html">Portfolio</a>
-                </li>
-                <li class="nav-list"><a href="skills.html">Skills</a></li>
-                <li class="nav-list"><a href="#">Contact Me</a></li>
-              </ul>
-            </div>
+    <header class="header">
+      <nav class="navbar">
+        <div class="navbar__logo">
+          <a href="#"
+            ><img class="logo" src="Images/rsz_logo.png" alt="Logo"
+          /></a>
+        </div>
+        <div class="navbar__hamburger-menu">
+          <i class="fa-solid fa-bars hamburger-icon"></i>
+          <div class="navbar__hamburger-content">
+            <ul class="navbar__ul">
+              <li class="navbar__li"><a href="home.html">Home</a></li>
+              <li class="navbar__li"><a href="about.html">About</a></li>
+              <li class="navbar__li"><a href="portfolio.html">Portfolio</a></li>
+              <li class="navbar__li"><a href="skills.html">Skills</a></li>
+              <li class="navbar__li"><a href="#">Contact Me</a></li>
+            </ul>
           </div>
         </div>
       </nav>
@@ -48,15 +44,17 @@
             <div>
               <h3 class="headers">It all starts with a hello</h3>
             </div>
-            <div class="desc">
+            <div class="contact-context__desc">
               <p>Let's Work Together!</p>
               <p>
-                To get started, please fill out the form below. I'll get back to you
-                ASAP.
+                To get started, please fill out the form below. I'll get back to
+                you ASAP.
               </p>
               <p>
                 Alternatively, you can contact me at
-                <a href="mailto:simondereje1@gmail.com">simondereje1@gmail.com</a>
+                <a href="mailto:simondereje1@gmail.com"
+                  >simondereje1@gmail.com</a
+                >
               </p>
             </div>
           </div>
@@ -67,37 +65,38 @@
             <div>
               <h4>Frequently Asked Questions</h4>
             </div>
-            <div class="desc">
+            <div class="contact-context__desc">
               <p>Here are the most asked questions.</p>
             </div>
             <!--Accordion-->
             <details open>
               <summary>How much does your services cost?</summary>
-              <div class="description">
+              <div class="faq__description">
                 <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione
-                  adipisci illum error, hic expedita numquam impedit explicabo vitae
-                  iure quae.
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Ratione adipisci illum error, hic expedita numquam impedit
+                  explicabo vitae iure quae.
                 </p>
               </div>
             </details>
             <details>
               <summary>How much does your services cost?</summary>
-              <div class="description">
+              <div class="faq__description">
                 <p>
-                  Consequuntur earum pariatur dolorem repellat temporibus ducimus
-                  sunt suscipit repudiandae cupiditate in accusantium recusandae
-                  tempora sint eligendi.
+                  Consequuntur earum pariatur dolorem repellat temporibus
+                  ducimus sunt suscipit repudiandae cupiditate in accusantium
+                  recusandae tempora sint eligendi.
                 </p>
               </div>
             </details>
             <details>
               <summary>How much does your services cost?</summary>
-              <div class="description">
+              <div class="faq__description">
                 <p>
-                  Tenetur, ex delectus, perferendis aperiam voluptatem consequuntur
-                  molestiae ratione rerum vitae ab modi, minus placeat quis
-                  dignissimos. Dolorem quaerat odit, iusto laboriosam possimus.
+                  Tenetur, ex delectus, perferendis aperiam voluptatem
+                  consequuntur molestiae ratione rerum vitae ab modi, minus
+                  placeat quis dignissimos. Dolorem quaerat odit, iusto
+                  laboriosam possimus.
                 </p>
               </div>
             </details>
@@ -106,7 +105,7 @@
       </article>
       <!-- Contact Form -->
       <div>
-        <h4 class="form-title">Contact Form</h3>
+        <h4 class="form-title">Contact Form</h4>
         <aside class="contact-form">
           <form action="#" method="post">
             <label for="name">Name</label>
@@ -141,8 +140,8 @@
 
     <!-- Footer Area -->
     <footer>
-      <div>
-        <div class="end-logo">
+      <div class="footer__logo-socials">
+        <div class="footer__end-logo">
           <a href="#"
             ><img class="logo" src="Images/rsz_logo.png" alt="Logo"
           /></a>
@@ -151,7 +150,7 @@
             saepe?
           </p>
         </div>
-        <ul class="socials">
+        <ul class="footer__socials">
           <li>
             <a href="#"><i class="fa-brands fa-linkedin"></i></a>
           </li>
@@ -166,31 +165,31 @@
           </li>
         </ul>
       </div>
-      <div>
+      <div class="footer__useful-links">
         <h2>Useful Links</h2>
-        <ul class="useful-links">
+        <ul class="footer__ul">
           <li><a href="#">Home</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Portfolio</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
       </div>
-      <div class="contact-info">
+      <div class="footer__contact-info">
         <h2>Contact Info</h2>
-        <address>
+        <address class="footer_address">
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi,
             sint?
           </p>
-          <ul>
+          <ul class="footer__contact-ul">
             <li>Tel: +251989971680</li>
             <li>Email: simon.dereje@aait.edu.et</li>
           </ul>
         </address>
       </div>
-      <div class="copyright">
+      <div class="footer__copyright">
         <p>Copyright 2023. All Rights Reserved</p>
-        <p>Powered by Simon</p>
+        <p class="footer__p--powered">Powered by Simon</p>
       </div>
     </footer>
   </body>

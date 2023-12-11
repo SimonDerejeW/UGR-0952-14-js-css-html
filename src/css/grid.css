@@ -25,18 +25,18 @@ a:visited {
   margin: 20px;
 }
 
-.hamburger-content {
+.navbar__hamburger-content {
   display: none;
 }
 
-.nav-list {
+.navbar__li {
   width: fit-content;
   font-weight: 800;
   padding: 5px;
   margin: 10px;
   color: #001858;
 }
-.nav-list a:hover {
+.navbar__li a:hover {
   color: rgb(230, 127, 53);
   transition: 0.3s ease;
 }
@@ -46,7 +46,7 @@ a:visited {
   grid-template-columns: 1fr auto;
 }
 
-.hamburger-content ul {
+.navbar__ul {
   list-style-type: none;
   padding-left: 0;
   display: grid;
@@ -63,11 +63,11 @@ a:visited {
   color: whitesmoke;
 }
 
-.hero-page1 {
+.hero-page__content {
   padding-bottom: 10px;
 }
 
-.call-to-action-button {
+.hero-page__cta-button {
   text-decoration: none;
   border: 1px solid #3498db;
   background: #3da9fc;
@@ -77,7 +77,7 @@ a:visited {
   margin-left: 10px;
   color: aliceblue;
 }
-.call-to-action-button:hover {
+.hero-page__cta-button:hover {
   background-color: #fffffe;
   color: #3da9fc;
   transition: 0.3s ease;
@@ -106,7 +106,7 @@ a:visited {
   transition: 0.3s;
 }
 
-.title-desc {
+.service-card__h3--desc {
   margin-left: 20px;
 }
 
@@ -124,14 +124,14 @@ footer a:visited {
   color: #fffffe;
 }
 
-.end-logo {
+.footer__end-logo {
   display: grid;
   grid-template-columns: auto auto;
   align-items: center;
   gap: 15px;
 }
 
-.socials {
+.footer__socials {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
@@ -139,15 +139,15 @@ footer a:visited {
   list-style-type: none;
 }
 
-.socials .fa-brands {
+.footer__socials .fa-brands {
   transform: scale(2);
 }
-.socials .fa-brands:hover {
+.footer__socials .fa-brands:hover {
   transform: scale(3.5);
   transition: 0.3s ease-out;
 }
 
-.useful-links {
+.footer__ul {
   display: grid;
   grid-template-rows: repeat(4, 1fr);
   gap: 10px;
@@ -156,15 +156,15 @@ footer a:visited {
 }
 
 /*Space between the link*/
-.useful-links li a {
+.footer__ul li a {
   margin: 0 10px 0 0;
 }
 
-.contact-info address ul {
+.footer__contact-ul {
   list-style-type: none;
 }
 
-.copyright {
+.footer__copyright {
   padding: 0;
   width: 100%;
   background-color: #7f5af0;
@@ -181,7 +181,7 @@ video {
   height: auto;
 }
 
-.content {
+.about__content {
   margin: 5px 5px 30px 5px;
   line-height: 1.5;
 }
@@ -195,11 +195,11 @@ h3 {
   font-size: 1.5em;
 }
 
-.edu {
+.education-work__edu {
   margin: 15px;
 }
 
-.edu ul {
+.education-work__ul {
   display: grid;
   grid-template-rows: repeat(4, 1fr);
   gap: 10px;
@@ -207,18 +207,18 @@ h3 {
   list-style-type: none;
 }
 
-.class {
+.education-work__class {
   display: grid;
   grid-template-columns: 4fr 1fr;
   gap: 10px;
 }
 
-.school {
+.education-work__school {
   font-size: large;
   font-weight: bold;
 }
 
-.year {
+.education-work__year {
   width: 40px;
   border-radius: 7px;
   padding: 3px;
@@ -226,17 +226,17 @@ h3 {
   background-color: #ef4565;
 }
 
-.course {
+.education-work__course {
   font-style: italic;
 }
 
 /* Portfolio Page*/
 
-.portfolio-content {
+.portfolio__content {
   text-align: center;
 }
 
-.project-filter ul {
+.portfolio__ul {
   padding: 0;
   list-style-type: none;
   display: flex;
@@ -244,18 +244,18 @@ h3 {
   align-items: center;
 }
 
-.project-filter ul li {
+.portfolio__li {
   border-radius: 15px;
   padding: 3px 25px;
   margin-bottom: 10px;
   background-color: aliceblue;
 }
-.project-filter ul li:hover {
+.portfolio__li:hover {
   background-color: #3da9fc;
   transition: 0.3s ease-in;
 }
 
-.project-container figure img {
+.portfolio__figure img {
   width: 100%;
   height: auto;
   border-radius: 20px;
@@ -264,13 +264,13 @@ h3 {
   transition: 0.5s ease;
 }
 
-.project-container {
+.portfolio__project-container {
   position: relative;
   text-align: center;
   color: white;
 }
 
-.project-center-content {
+.portfolio__project-center-content {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -279,14 +279,14 @@ h3 {
   transition: 0.5s ease;
 }
 
-.project-container:hover figure img {
+.portfolio__project-container:hover .portfolio__figure img {
   opacity: 0.3;
 }
-.project-container:hover .project-center-content {
+.portfolio__project-container:hover .portfolio__project-center-content {
   opacity: 1;
 }
 
-.port-text {
+.portfolio__port-text {
   background-color: #d8eefe;
   color: #47505b;
   padding: 10px;
@@ -305,17 +305,17 @@ h3 {
   padding-left: 10px;
 }
 
-.desc {
+.skill-desc__desc {
   margin-left: 10px;
 }
 
-.progress-bar {
+.item__progress-bar {
   background-color: rgb(192, 192, 192);
   width: 80%;
   border-radius: 15px;
 }
 
-.skill {
+.progress-bar__skill {
   background-color: #232946;
   color: aliceblue;
   padding: 1%;
@@ -382,7 +382,9 @@ h3 {
 }
 
 /*Contact Me*/
-
+.contact-context__desc {
+  margin-left: 10px;
+}
 summary {
   font-weight: 600;
   color: rgb(255, 255, 255);
@@ -457,7 +459,7 @@ input[type="submit"]:hover {
   display: none;
 }
 
-.details-img img {
+.portfolio-details__img img {
   width: 100%;
   border-radius: 20px;
 }
@@ -485,26 +487,22 @@ input[type="submit"]:hover {
   .hamburger-icon {
     display: none;
   }
-  .hamburger-content {
+  .navbar__hamburger-content {
     display: block;
   }
-  .hamburger-content ul {
+  .navbar__hamburger-content ul {
     display: flex;
   }
-
-  /* .navbar {
-    display: flex;
-  } */
 
   /*Hero Page*/
-  .hero-page1 h1 {
+  .hero-page__title {
     margin-bottom: 10px;
   }
-  .hero-page1 p {
+  .hero-page__description {
     width: 40%;
     margin-bottom: 25px;
   }
-  .call-to-action-button {
+  .hero-page__cta-button {
     margin-bottom: 50px;
   }
 
@@ -513,7 +511,7 @@ input[type="submit"]:hover {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
   }
-  .services h2 {
+  .headers {
     grid-column: span 3;
   }
   .service-card {
@@ -529,13 +527,13 @@ input[type="submit"]:hover {
     grid-template-rows: 1fr 40px;
     justify-items: center;
   }
-  .copyright {
+  .footer__copyright {
     grid-column: span 3;
   }
-  .logo-socials {
+  .footer__logo-socials {
     margin: 10px 10px 10px 0px;
   }
-  .powered {
+  .footer__p--powered {
     text-align: center;
   }
 
@@ -572,10 +570,10 @@ input[type="submit"]:hover {
     justify-items: center;
     justify-content: center;
   }
-  .skill-desc p {
+  .skills-image__skill-desc p {
     width: 500px;
   }
-  .skill-desc h2 {
+  .skills-image__skill-desc h2 {
     text-align: start;
     margin-left: 15px;
   }
@@ -611,20 +609,20 @@ input[type="submit"]:hover {
     justify-self: end;
   } */
   /*Portfolio Page*/
-  .project-filter ul {
+  .portfolio__ul {
     display: flex;
     flex-direction: row;
     justify-content: center;
   }
-  .project-filter ul li {
+  .portfolio__li {
     margin-right: 15px;
   }
-  .total-project-container {
+  .portfolio__total-project-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
   }
-  .project-center-content {
+  .portfolio__project-center-content {
     max-height: 245px;
     overflow-y: scroll;
   }
@@ -646,7 +644,7 @@ input[type="submit"]:hover {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-  .details-img img {
+  .portfolio-details__img img {
     max-height: 400px;
   }
   .portfolio-info {
@@ -696,25 +694,25 @@ input[type="submit"]:hover {
   }
 
   /*Portfolio*/
-  .filter-wrapper {
+  .portfolio__filter-wrapper {
     display: flex;
     justify-content: center;
   }
-  .project-filter {
+  .portfolio__project-filter {
     max-width: 500px;
   }
-  .project-filter ul {
+  .portfolio__ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
   }
-  .total-project-container {
+  .portfolio__total-project-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
   }
-  .project-center-content {
+  .portfolio__project-center-content {
     max-height: 220px;
     overflow-y: scroll;
   }
@@ -751,7 +749,7 @@ input[type="submit"]:hover {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-  .details-img img {
+  .portfolio-details__img img {
     max-height: 400px;
   }
   .portfolio-info {
@@ -782,7 +780,7 @@ input[type="submit"]:hover {
 
 /* Hover menu for mobile portrait and mobile landscape*/
 @media screen and (max-width: 780px) {
-  .hamburger-menu:hover .hamburger-content {
+  .navbar__hamburger-menu:hover .navbar__hamburger-content {
     position: absolute;
     height: auto;
     width: 250px;
@@ -796,7 +794,7 @@ input[type="submit"]:hover {
     border-radius: 20px;
   }
 
-  .hamburger-menu:hover .hamburger-icon {
+  .navbar__hamburger-menu:hover .hamburger-icon {
     display: none;
   }
 }

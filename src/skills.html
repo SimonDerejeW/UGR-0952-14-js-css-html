@@ -16,29 +16,23 @@
     <link rel="stylesheet" href="css/grid.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <div class="navbar">
-          <div>
-            <a href="#"
-              ><img class="logo" src="Images/rsz_logo.png" alt="Logo"
-            /></a>
-          </div>
-          <div class="hamburger-menu">
-            <i class="fa-solid fa-bars hamburger-icon"></i>
-            <div class="hamburger-content">
-              <ul>
-                <li class="nav-list"><a href="home.html">Home</a></li>
-                <li class="nav-list"><a href="about.html">About</a></li>
-                <li class="nav-list">
-                  <a href="portfolio.html">Portfolio</a>
-                </li>
-                <li class="nav-list"><a href="#">Skills</a></li>
-                <li class="nav-list">
-                  <a href="contact.html">Contact Me</a>
-                </li>
-              </ul>
-            </div>
+    <header class="header">
+      <nav class="navbar">
+        <div class="navbar__logo">
+          <a href="#"
+            ><img class="logo" src="Images/rsz_logo.png" alt="Logo"
+          /></a>
+        </div>
+        <div class="navbar__hamburger-menu">
+          <i class="fa-solid fa-bars hamburger-icon"></i>
+          <div class="navbar__hamburger-content">
+            <ul class="navbar__ul">
+              <li class="navbar__li"><a href="home.html">Home</a></li>
+              <li class="navbar__li"><a href="about.html">About</a></li>
+              <li class="navbar__li"><a href="portfolio.html">Portfolio</a></li>
+              <li class="navbar__li"><a href="#">Skills</a></li>
+              <li class="navbar__li"><a href="contact.html">Contact Me</a></li>
+            </ul>
           </div>
         </div>
       </nav>
@@ -46,10 +40,10 @@
     <main>
       <!-- Skills Area -->
       <section class="skill-section">
-        <div class="skills-image">
-          <div class="skill-desc">
+        <div class="skill-section__skills-image">
+          <div class="skills-image__skill-desc">
             <h2 class="headers">Skills</h2>
-            <div class="desc">
+            <div class="skill-desc__desc">
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
                 sunt nesciunt, quod deleniti alias molestiae.
@@ -58,36 +52,36 @@
           </div>
           <!--Skills-->
           <div class="skillz">
-            <div>
+            <div class="skillz__item">
               <div>
                 <h3>Web Development</h3>
               </div>
-              <div class="progress-bar">
-                <div class="skill web">89%</div>
+              <div class="item__progress-bar">
+                <div class="progress-bar__skill web">89%</div>
               </div>
             </div>
             <div>
               <div>
                 <h3>UI/UX Design</h3>
               </div>
-              <div class="progress-bar">
-                <div class="skill ui">91%</div>
+              <div class="item__progress-bar">
+                <div class="progress-bar__skill ui">91%</div>
               </div>
             </div>
             <div>
               <div>
                 <h3>App Design</h3>
               </div>
-              <div class="progress-bar">
-                <div class="skill app">80%</div>
+              <div class="item__progress-bar">
+                <div class="progress-bar__skill app">80%</div>
               </div>
             </div>
             <div>
               <div>
                 <h3>Problem Solving</h3>
               </div>
-              <div class="progress-bar">
-                <div class="skill problem-solving">83%</div>
+              <div class="item__progress-bar">
+                <div class="progress-bar__skill problem-solving">83%</div>
               </div>
             </div>
           </div>
@@ -180,8 +174,8 @@
 
     <!-- Footer Area -->
     <footer>
-      <div>
-        <div class="end-logo">
+      <div class="footer__logo-socials">
+        <div class="footer__end-logo">
           <a href="#"
             ><img class="logo" src="Images/rsz_logo.png" alt="Logo"
           /></a>
@@ -190,7 +184,7 @@
             saepe?
           </p>
         </div>
-        <ul class="socials">
+        <ul class="footer__socials">
           <li>
             <a href="#"><i class="fa-brands fa-linkedin"></i></a>
           </li>
@@ -205,31 +199,31 @@
           </li>
         </ul>
       </div>
-      <div>
+      <div class="footer__useful-links">
         <h2>Useful Links</h2>
-        <ul class="useful-links">
+        <ul class="footer__ul">
           <li><a href="#">Home</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Portfolio</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
       </div>
-      <div class="contact-info">
+      <div class="footer__contact-info">
         <h2>Contact Info</h2>
-        <address>
+        <address class="footer_address">
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi,
             sint?
           </p>
-          <ul>
+          <ul class="footer__contact-ul">
             <li>Tel: +251989971680</li>
             <li>Email: simon.dereje@aait.edu.et</li>
           </ul>
         </address>
       </div>
-      <div class="copyright">
+      <div class="footer__copyright">
         <p>Copyright 2023. All Rights Reserved</p>
-        <p>Powered by Simon</p>
+        <p class="footer__p--powered">Powered by Simon</p>
       </div>
     </footer>
   </body>
