@@ -54,26 +54,10 @@ a:visited {
   justify-content: center;
 }
 
-.hamburger-menu:hover .hamburger-content {
-  position: absolute;
-  height: auto;
-  width: 250px;
-  top: 0;
-  right: 3px;
-  background-color: rgba(240, 248, 255, 0.6);
-  overflow-x: hidden;
-  display: grid;
-  gap: 10px;
-  justify-content: center;
-  border-radius: 20px;
-}
-
-.hamburger-menu:hover .hamburger-icon {
-  display: none;
-}
+/* hover was here*/
 
 .hero-page {
-  background: url(Images/cat_small.jpg);
+  background: url(/UGR-0952-14/src/Images/cat_small.jpg);
   background-size: cover;
   padding: 10px;
   color: whitesmoke;
@@ -311,6 +295,9 @@ h3 {
 }
 
 /* Skills Page*/
+.image-aside {
+  display: none;
+}
 .skillz {
   display: grid;
   grid-template-rows: 1fr;
@@ -463,6 +450,13 @@ input[type="submit"]:hover {
 
 /* Portfolio Details*/
 
+.detail-vid-image video {
+  display: none;
+}
+.detail-desc img {
+  display: none;
+}
+
 .details-img img {
   width: 100%;
   border-radius: 20px;
@@ -483,4 +477,326 @@ input[type="submit"]:hover {
 
 .portfolio-info-desc {
   padding-left: 13px;
+}
+
+/* Desktop and Tablet*/
+@media screen and (min-width: 780px) {
+  /*Header*/
+  .hamburger-icon {
+    display: none;
+  }
+  .hamburger-content {
+    display: block;
+  }
+  .hamburger-content ul {
+    display: flex;
+  }
+
+  /* .navbar {
+    display: flex;
+  } */
+
+  /*Hero Page*/
+  .hero-page1 h1 {
+    margin-bottom: 10px;
+  }
+  .hero-page1 p {
+    width: 40%;
+    margin-bottom: 25px;
+  }
+  .call-to-action-button {
+    margin-bottom: 50px;
+  }
+
+  .services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  .services h2 {
+    grid-column: span 3;
+  }
+  .service-card {
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  footer {
+    width: 98vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 40px;
+    justify-items: center;
+  }
+  .copyright {
+    grid-column: span 3;
+  }
+  .logo-socials {
+    margin: 10px 10px 10px 0px;
+  }
+  .powered {
+    text-align: center;
+  }
+
+  /*About Page*/
+  .about-vid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /*justify-items: center;*/
+  }
+  video {
+    /*Change the width somehow*/
+    height: 400px;
+  }
+  .education-work {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .education-work h2 {
+    grid-column: span 2;
+    text-align: center;
+  }
+
+  /*Skills*/
+  .image-aside {
+    display: block;
+  }
+  .image-aside img {
+    height: 500px;
+    border-radius: 20px;
+  }
+  .skill-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    justify-content: center;
+  }
+  .skill-desc p {
+    width: 500px;
+  }
+  .skill-desc h2 {
+    text-align: start;
+    margin-left: 15px;
+  }
+  .skillz {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+  }
+  /* .testimonials {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    justify-items: center;
+  }
+  .testimonials h2 {
+    grid-column: span 3;
+  }
+  .center {
+    grid-column-start: 2;
+  } */
+  .testimonials {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 20px;
+    justify-items: center;
+  }
+  .testimonials h2 {
+    grid-column: span 2;
+  }
+  /* .sami {
+    justify-self: end;
+  } */
+  /*Portfolio Page*/
+  .project-filter ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .project-filter ul li {
+    margin-right: 15px;
+  }
+  .total-project-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .project-center-content {
+    max-height: 245px;
+    overflow-y: scroll;
+  }
+
+  /*Contact Form*/
+  .contact-page {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    /*align-items: center;*/
+  }
+
+  /*Portfolio Details*/
+  .detail-vid-image video {
+    display: block;
+  }
+
+  .detail-vid-image {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .details-img img {
+    max-height: 400px;
+  }
+  .portfolio-info {
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .detail-desc img {
+    display: block;
+  }
+  .detail-desc img {
+    height: 350px;
+    border-radius: 20px;
+  }
+  .detail-desc {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    margin-top: 20px;
+  }
+
+  .first {
+    order: 1;
+  }
+}
+
+/*Landscape*/
+@media screen and (min-width: 480px) and (max-width: 780px) {
+  footer {
+    width: 100dvw;
+  }
+  .services {
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    grid-template-columns: 1fr;
+  }
+
+  /*About*/
+  .education-work {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .education-work h2 {
+    grid-column: span 2;
+    text-align: center;
+  }
+
+  /*Portfolio*/
+  .filter-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  .project-filter {
+    max-width: 500px;
+  }
+  .project-filter ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .total-project-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .project-center-content {
+    max-height: 220px;
+    overflow-y: scroll;
+  }
+
+  /*Skills*/
+
+  .image-aside {
+    display: none;
+  }
+  .skillz {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+  }
+  .testimonials {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+  }
+  .testimonials h2 {
+    grid-column: span 2;
+  }
+
+  /*Portfolio Details*/
+  .detail-vid-image video {
+    display: block;
+  }
+  .detail-vid-image video {
+    align-self: center;
+  }
+
+  .detail-vid-image {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .details-img img {
+    max-height: 400px;
+  }
+  .portfolio-info {
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .detail-desc img {
+    display: block;
+  }
+  .detail-desc img {
+    height: 350px;
+    border-radius: 20px;
+  }
+  .detail-desc {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    margin-top: 20px;
+    gap: 10px;
+  }
+
+  .first {
+    order: 1;
+  }
+}
+
+/* Hover menu for mobile portrait and mobile landscape*/
+@media screen and (max-width: 780px) {
+  .hamburger-menu:hover .hamburger-content {
+    position: absolute;
+    height: auto;
+    width: 250px;
+    top: 0;
+    right: 3px;
+    background-color: rgba(240, 248, 255, 0.6);
+    overflow-x: hidden;
+    display: grid;
+    gap: 10px;
+    justify-content: center;
+    border-radius: 20px;
+  }
+
+  .hamburger-menu:hover .hamburger-icon {
+    display: none;
+  }
 }

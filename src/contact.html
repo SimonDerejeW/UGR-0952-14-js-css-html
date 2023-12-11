@@ -25,119 +25,119 @@
             /></a>
           </div>
           <div class="hamburger-menu">
-            <button><i class="fa-solid fa-bars"></i></button>
-          </div>
-          <div>
-            <ul>
-              <li><a href="index1.html">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li>
-                <a href="portfolio1.html">Portfolio</a>
-              </li>
-              <li><a href="skills1.html">Skills</a></li>
-              <li><a href="#">Contact Me</a></li>
-            </ul>
+             <i class="fa-solid fa-bars hamburger-icon"></i>
+            <div class="hamburger-content">
+              <ul>
+                <li class="nav-list"><a href="home.html">Home</a></li>
+                <li class="nav-list"><a href="about.html">About</a></li>
+                <li class="nav-list">
+                  <a href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-list"><a href="skills.html">Skills</a></li>
+                <li class="nav-list"><a href="#">Contact Me</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </nav>
     </header>
-    <div>
+    <main class="contact-page">
+      <article class="contact-context">
+        <div>
+          <div>
+            <div>
+              <h3 class="headers">It all starts with a hello</h3>
+            </div>
+            <div class="desc">
+              <p>Let's Work Together!</p>
+              <p>
+                To get started, please fill out the form below. I'll get back to you
+                ASAP.
+              </p>
+              <p>
+                Alternatively, you can contact me at
+                <a href="mailto:simondereje1@gmail.com">simondereje1@gmail.com</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- FAQ's -->
+        <div class="FAQ">
+          <div class="faq-title">
+            <div>
+              <h4>Frequently Asked Questions</h4>
+            </div>
+            <div class="desc">
+              <p>Here are the most asked questions.</p>
+            </div>
+            <!--Accordion-->
+            <details open>
+              <summary>How much does your services cost?</summary>
+              <div class="description">
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione
+                  adipisci illum error, hic expedita numquam impedit explicabo vitae
+                  iure quae.
+                </p>
+              </div>
+            </details>
+            <details>
+              <summary>How much does your services cost?</summary>
+              <div class="description">
+                <p>
+                  Consequuntur earum pariatur dolorem repellat temporibus ducimus
+                  sunt suscipit repudiandae cupiditate in accusantium recusandae
+                  tempora sint eligendi.
+                </p>
+              </div>
+            </details>
+            <details>
+              <summary>How much does your services cost?</summary>
+              <div class="description">
+                <p>
+                  Tenetur, ex delectus, perferendis aperiam voluptatem consequuntur
+                  molestiae ratione rerum vitae ab modi, minus placeat quis
+                  dignissimos. Dolorem quaerat odit, iusto laboriosam possimus.
+                </p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </article>
+      <!-- Contact Form -->
       <div>
-        <div>
-          <h3 class="headers">It all starts with a hello</h3>
-        </div>
-        <div class="desc">
-          <p>Let's Work Together!</p>
-          <p>
-            To get started, please fill out the form below. I'll get back to you
-            ASAP.
-          </p>
-          <p>
-            Alternatively, you can contact me at
-            <a href="mailto:simondereje1@gmail.com">simondereje1@gmail.com</a>
-          </p>
-        </div>
+        <h4 class="form-title">Contact Form</h3>
+        <aside class="contact-form">
+          <form action="#" method="post">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your Name"
+              required
+            />
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
+            <label for="moreInfo">More Information</label>
+            <textarea
+              id="moreInfo"
+              name="moreInfo"
+              rows="4"
+              placeholder="Write something..."
+              required
+            ></textarea>
+            <input type="submit" value="Submit" />
+          </form>
+        </aside>
       </div>
-    </div>
-
-    <!-- FAQ's -->
-    <div class="FAQ">
-      <div class="faq-title">
-        <div>
-          <h4>Frequently Asked Questions</h4>
-        </div>
-        <div class="desc">
-          <p>Here are the most asked questions.</p>
-        </div>
-        <!--Accordion-->
-        <details open>
-          <summary>How much does your services cost?</summary>
-          <div class="description">
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione
-              adipisci illum error, hic expedita numquam impedit explicabo vitae
-              iure quae.
-            </p>
-          </div>
-        </details>
-        <details>
-          <summary>How much does your services cost?</summary>
-          <div class="description">
-            <p>
-              Consequuntur earum pariatur dolorem repellat temporibus ducimus
-              sunt suscipit repudiandae cupiditate in accusantium recusandae
-              tempora sint eligendi.
-            </p>
-          </div>
-        </details>
-
-        <details>
-          <summary>How much does your services cost?</summary>
-          <div class="description">
-            <p>
-              Tenetur, ex delectus, perferendis aperiam voluptatem consequuntur
-              molestiae ratione rerum vitae ab modi, minus placeat quis
-              dignissimos. Dolorem quaerat odit, iusto laboriosam possimus.
-            </p>
-          </div>
-        </details>
-      </div>
-    </div>
-
-    <!-- Contact Form -->
-    <h4 class="form-title">Contact Form</h3>
-    <aside class="contact-form">
-      <form action="#" method="post">
-        <label for="name">Name</label>
-        <input
-          type="text"
-          id="name"
-          name="name"
-          placeholder="Your Name"
-          required
-        />
-
-        <label for="email">Email Address</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="Your Email"
-          required
-        />
-
-        <label for="moreInfo">More Information</label>
-        <textarea
-          id="moreInfo"
-          name="moreInfo"
-          rows="4"
-          placeholder="Write something..."
-          required
-        ></textarea>
-
-        <input type="submit" value="Submit" />
-      </form>
-    </aside>
+    </main>
 
     <!-- Footer Area -->
     <footer>
