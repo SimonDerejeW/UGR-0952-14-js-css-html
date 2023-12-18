@@ -13,6 +13,10 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;0,700;1,200;1,400&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="css/grid.css" />
   </head>
   <body>
@@ -92,81 +96,89 @@
       </section>
 
       <!-- Testimonials -->
-      <section>
-        <div class="testimonials">
-          <h2 class="headers">Testimonials</h2>
-          <div class="single-testimonial sami">
-            <div class="test-head">
-              <div class="quote-icon">
-                <i class="fa-solid fa-quote-left"></i>
+      <!-- Testimonials -->
+      <section class="testimonials__section">
+        <h2 class="headers testimonial__header">Testimonials</h2>
+        <div class="slide-container swiper">
+          <div class="slide-content">
+            <div class="card-wrapper swiper-wrapper">
+              <div class="card swiper-slide">
+                <div class="test-head">
+                  <div class="quote-icon">
+                    <i class="fa-solid fa-quote-left"></i>
+                  </div>
+                  <div class="name-position">
+                    <h4>Samuel Endale</h4>
+                    <h5>Managing Director, DevignEdge</h5>
+                  </div>
+                </div>
+                <div>
+                  <q class="quote">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+                    ex ut enim voluptates, quos blanditiis voluptatum iure
+                    corporis, commodi, nesciunt est minus in provident quo.
+                  </q>
+                </div>
               </div>
-              <div class="name-position">
-                <h4>Samuel Endale</h4>
-                <h5>Managing Director, DevignEdge</h5>
+              <div class="card swiper-slide">
+                <div class="test-head">
+                  <div class="quote-icon">
+                    <i class="fa-solid fa-quote-left"></i>
+                  </div>
+                  <div class="name-position">
+                    <h4>Yohannes Haile</h4>
+                    <h5>Managing Director, DevignEdge</h5>
+                  </div>
+                </div>
+                <div>
+                  <q class="quote">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+                    ex ut enim voluptates, quos blanditiis voluptatum iure
+                    corporis, commodi, nesciunt est minus in provident quo.
+                  </q>
+                </div>
               </div>
-            </div>
-            <div>
-              <q class="quote">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ex
-                ut enim voluptates, quos blanditiis voluptatum iure corporis,
-                commodi, nesciunt est minus in provident quo.
-              </q>
+              <div class="card swiper-slide">
+                <div class="test-head">
+                  <div class="quote-icon">
+                    <i class="fa-solid fa-quote-left"></i>
+                  </div>
+                  <div class="name-position">
+                    <h4>Fuad Salo</h4>
+                    <h5>Managing Director, DevignEdge</h5>
+                  </div>
+                </div>
+                <div>
+                  <q class="quote">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+                    ex ut enim voluptates, quos blanditiis voluptatum iure
+                    corporis, commodi, nesciunt est minus in provident quo.
+                  </q>
+                </div>
+              </div>
+              <div class="card swiper-slide">
+                <div class="test-head">
+                  <div class="quote-icon">
+                    <i class="fa-solid fa-quote-left"></i>
+                  </div>
+                  <div class="name-position">
+                    <h4>Abenezer Tiliye</h4>
+                    <h5>Managing Director, DevignEdge</h5>
+                  </div>
+                </div>
+                <div>
+                  <q class="quote">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+                    ex ut enim voluptates, quos blanditiis voluptatum iure
+                    corporis, commodi, nesciunt est minus in provident quo.
+                  </q>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="single-testimonial">
-            <div class="test-head">
-              <div class="quote-icon">
-                <i class="fa-solid fa-quote-left"></i>
-              </div>
-              <div class="name-position">
-                <h4>Yohannes Hailemariam</h4>
-                <h5>Managing Director, DevignEdge</h5>
-              </div>
-            </div>
-            <div>
-              <q class="quote">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ex
-                ut enim voluptates, quos blanditiis voluptatum iure corporis,
-                commodi, nesciunt est minus in provident quo.
-              </q>
-            </div>
-          </div>
-          <div class="single-testimonial sami">
-            <div class="test-head">
-              <div class="quote-icon">
-                <i class="fa-solid fa-quote-left"></i>
-              </div>
-              <div class="name-position">
-                <h4>Fuad Salo</h4>
-                <h5>Managing Director, DevignEdge</h5>
-              </div>
-            </div>
-            <div>
-              <q class="quote">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ex
-                ut enim voluptates, quos blanditiis voluptatum iure corporis,
-                commodi, nesciunt est minus in provident quo.
-              </q>
-            </div>
-          </div>
-          <div class="single-testimonial center">
-            <div class="test-head">
-              <div class="quote-icon">
-                <i class="fa-solid fa-quote-left"></i>
-              </div>
-              <div class="name-position">
-                <h4>Abenezer Tiliye</h4>
-                <h5>Managing Director, DevignEdge</h5>
-              </div>
-            </div>
-            <div>
-              <q class="quote">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ex
-                ut enim voluptates, quos blanditiis voluptatum iure corporis,
-                commodi, nesciunt est minus in provident quo.
-              </q>
-            </div>
-          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
         </div>
       </section>
     </main>
@@ -226,5 +238,7 @@
         <p class="footer__p--powered">Powered by Simon</p>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>

@@ -52,16 +52,24 @@
         <div class="portfolio__filter-wrapper">
           <div class="portfolio__project-filter">
             <ul class="portfolio__ul">
-              <li class="portfolio__li">All Projects</li>
-              <li class="portfolio__li">UI/UX Design</li>
-              <li class="portfolio__li">Web Development</li>
-              <li class="portfolio__li">App Developement</li>
+              <li class="portfolio__li" onclick="filterProjects('all')">
+                All Projects
+              </li>
+              <li class="portfolio__li" onclick="filterProjects('ui-ux')">
+                UI/UX Design
+              </li>
+              <li class="portfolio__li" onclick="filterProjects('web-dev')">
+                Web Development
+              </li>
+              <li class="portfolio__li" onclick="filterProjects('app-dev')">
+                App Developement
+              </li>
             </ul>
           </div>
         </div>
 
         <div class="portfolio__total-project-container">
-          <div class="portfolio__project-container">
+          <div class="portfolio__project-container ui-ux show">
             <figure class="portfolio__figure">
               <img src="Images/cat_small.jpg" alt="Portfolio Details Photo" />
             </figure>
@@ -78,7 +86,7 @@
               </div>
             </div>
           </div>
-          <div class="portfolio__project-container">
+          <div class="portfolio__project-container web-dev show">
             <figure class="portfolio__figure">
               <img src="Images/cat_small.jpg" alt="Portfolio Details Photo" />
             </figure>
@@ -95,7 +103,7 @@
               </div>
             </div>
           </div>
-          <div class="portfolio__project-container">
+          <div class="portfolio__project-container app-dev show">
             <figure class="portfolio__figure">
               <img src="Images/cat_small.jpg" alt="Portfolio Details Photo" />
             </figure>
@@ -112,7 +120,7 @@
               </div>
             </div>
           </div>
-          <div class="portfolio__project-container">
+          <div class="portfolio__project-container web-dev show">
             <figure class="portfolio__figure">
               <img src="Images/cat_small.jpg" alt="Portfolio Details Photo" />
             </figure>
@@ -129,7 +137,7 @@
               </div>
             </div>
           </div>
-          <div class="portfolio__project-container">
+          <div class="portfolio__project-container app-dev show">
             <figure class="portfolio__figure">
               <img src="Images/cat_small.jpg" alt="Portfolio Details Photo" />
             </figure>
@@ -146,7 +154,7 @@
               </div>
             </div>
           </div>
-          <div class="portfolio__project-container">
+          <div class="portfolio__project-container web-dev show">
             <figure class="portfolio__figure">
               <img src="Images/cat_small.jpg" alt="Portfolio Details Photo" />
             </figure>
@@ -221,5 +229,6 @@
         <p class="footer__p--powered">Powered by Simon</p>
       </div>
     </footer>
+    <script src="js/index.js"></script>
   </body>
 </html>
