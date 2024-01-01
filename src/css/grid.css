@@ -57,8 +57,9 @@ a:visited {
 /* hover was here*/
 
 .hero-page {
-  background: url(/UGR-0952-14/src/Images/cat_small.jpg);
+  background-image: url(../Images/cat_small.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
   padding: 10px;
   color: whitesmoke;
 }
